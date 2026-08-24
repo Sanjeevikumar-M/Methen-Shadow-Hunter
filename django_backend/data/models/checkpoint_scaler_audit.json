@@ -1,9 +1,0 @@
-{
-  "target_scaler_match": true,
-  "checkpoint_target_mean": 2108.3,
-  "fitted_target_mean": 2108.3,
-  "target_mean_difference": 0.0,
-  "checkpoint_target_std": 168.1,
-  "fitted_target_std": 168.1,
-  "target_std_difference": 0.0
-}
