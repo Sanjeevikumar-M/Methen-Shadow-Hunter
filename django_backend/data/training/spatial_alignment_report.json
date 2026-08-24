@@ -1,6 +1,0 @@
-{
-  "spatial_coverage": "India National Region [64.02E, 3.62N, 98.73E, 39.25N]",
-  "coordinate_alignment": "Identical (lat, lng) evaluated across t-2, t-1, and target observation",
-  "max_spatial_mismatch_km": 0.0,
-  "spatial_alignment_status": "PASS"
-}
