@@ -1,0 +1,25 @@
+{
+  "total_predictions_logged": 1,
+  "pending_forecasts_count": 1,
+  "validated_forecasts_count": 0,
+  "live_mae_ppb": null,
+  "live_rmse_ppb": null,
+  "validation_status": "LIVE VALIDATION PENDING (No Future Target Available Yet)",
+  "pending_forecasts": [
+    {
+      "prediction_id": "PRED-1000",
+      "gee_input_image_id": "COPERNICUS/S5P/OFFL/L3_CH4/20260812T011658",
+      "prediction_timestamp": "2026-08-13T08:58:52.610727Z",
+      "target_timestamp": "2026-08-14T08:58:52.610727Z",
+      "lat": 21.75,
+      "lng": 72.98,
+      "predicted_ch4_ppb": 1996.7,
+      "actual_ch4_ppb": null,
+      "prediction_uncertainty_ppb": 33.15,
+      "model_version": "PINN-REALDATA-v3",
+      "dataset_version": "S5P-INDIA-REAL-v2",
+      "validation_status": "PENDING"
+    }
+  ],
+  "validated_forecasts": []
+}

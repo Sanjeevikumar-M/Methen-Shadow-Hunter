@@ -1,0 +1,144 @@
+{
+  "model_name": "Physics-Informed Neural Network (MethanePINN)",
+  "version": "PINN-REALDATA-v3",
+  "dataset_version": "S5P-INDIA-REAL-v2",
+  "framework": "PyTorch 2.13.0+cpu",
+  "region": "India (National Bounding Box)",
+  "input_dim": 12,
+  "feature_names": [
+    "latitude",
+    "longitude",
+    "t_minus_2_ch4",
+    "t_minus_1_ch4",
+    "background_ch4",
+    "anomaly_ppb",
+    "z_score",
+    "wind_speed",
+    "wind_direction",
+    "u_wind",
+    "v_wind",
+    "gaussian_plume_concentration"
+  ],
+  "target_name": "t_plus_1_ch4 (held-out / next observation)",
+  "training_samples": 420,
+  "validation_samples": 90,
+  "test_samples": 90,
+  "training_duration_sec": 4.79,
+  "scalers": {
+    "target_mean": 2108.3,
+    "target_std": 168.1,
+    "isolation": "Fitted ONLY on Real Training Split"
+  },
+  "held_out_test_metrics": {
+    "r2_score": 0.3409000039100647,
+    "rmse_ppb": 136.22000122070312,
+    "mae_ppb": 94.66000366210938,
+    "mape_percent": 4.329999923706055
+  },
+  "baseline_comparison": [
+    {
+      "model": "MLP (1 Feature)",
+      "type": "Sanity Test",
+      "features": 1,
+      "MAE": 103.55000305175781,
+      "RMSE": 132.57000732421875,
+      "R2": 0.3756999969482422,
+      "MAPE": 4.809999942779541
+    },
+    {
+      "model": "MethanePINN",
+      "type": "Physics-Informed Deep Learning",
+      "features": 12,
+      "MAE": 94.66000366210938,
+      "RMSE": 136.22000122070312,
+      "R2": 0.3409000039100647,
+      "MAPE": 4.329999923706055
+    },
+    {
+      "model": "MLP (9 Features)",
+      "type": "Sanity Test",
+      "features": 9,
+      "MAE": 108.0,
+      "RMSE": 141.13999938964844,
+      "R2": 0.2924000024795532,
+      "MAPE": 5.010000228881836
+    },
+    {
+      "model": "Random Forest",
+      "type": "Predictive Baseline",
+      "features": 12,
+      "MAE": 113.41,
+      "RMSE": 145.98,
+      "R2": 0.2431,
+      "MAPE": 5.28
+    },
+    {
+      "model": "Standard Neural Net",
+      "type": "Physics Ablation (No Physics Loss)",
+      "features": 12,
+      "MAE": 107.54000091552734,
+      "RMSE": 146.0,
+      "R2": 0.24279999732971191,
+      "MAPE": 5.010000228881836
+    },
+    {
+      "model": "Persistence",
+      "type": "Predictive Baseline",
+      "features": 1,
+      "MAE": 73.22000122070312,
+      "RMSE": 148.9199981689453,
+      "R2": 0.21230000257492065,
+      "MAPE": 3.1700000762939453
+    },
+    {
+      "model": "Historical Mean",
+      "type": "Predictive Baseline",
+      "features": 0,
+      "MAE": 145.05999755859375,
+      "RMSE": 168.0,
+      "R2": -0.0024999999441206455,
+      "MAPE": 6.889999866485596
+    }
+  ],
+  "best_performing_model": "MLP (1 Feature)",
+  "residual_analysis": {
+    "mean_residual_ppb": 9.65999984741211,
+    "median_residual_ppb": -40.31999969482422,
+    "std_residual_ppb": 135.8800048828125,
+    "min_residual_ppb": -176.13999938964844,
+    "max_residual_ppb": 426.989990234375
+  },
+  "regional_error_report": {
+    "Gujarat": {
+      "sample_count": 34,
+      "RMSE": 147.1699981689453,
+      "MAE": 105.62999725341797
+    },
+    "Andhra Pradesh": {
+      "sample_count": 12,
+      "RMSE": 157.74000549316406,
+      "MAE": 110.36000061035156
+    },
+    "Maharashtra": {
+      "sample_count": 11,
+      "RMSE": 92.47000122070312,
+      "MAE": 64.25
+    },
+    "Assam": {
+      "sample_count": 11,
+      "RMSE": 84.7300033569336,
+      "MAE": 66.1500015258789
+    },
+    "Rajasthan": {
+      "sample_count": 11,
+      "RMSE": 160.82000732421875,
+      "MAE": 109.55999755859375
+    },
+    "Delhi NCR": {
+      "sample_count": 11,
+      "RMSE": 127.0199966430664,
+      "MAE": 87.68000030517578
+    }
+  },
+  "last_training_time": "2026-08-13T08:58:14.736021Z"
+}

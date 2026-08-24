@@ -1,0 +1,11 @@
+{
+  "target_mean": 2099.89990234375,
+  "target_std": 167.8000030517578,
+  "target_min": 1877.9000244140625,
+  "target_max": 2487.89990234375,
+  "prediction_mean": 2090.199951171875,
+  "prediction_std": 106.19999694824219,
+  "prediction_min": 1911.5,
+  "prediction_max": 2285.699951171875,
+  "systematic_bias_ppb": -9.699999809265137
+}

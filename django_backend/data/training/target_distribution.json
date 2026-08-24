@@ -1,0 +1,14 @@
+{
+  "train_mean": 2108.3,
+  "train_std": 167.9,
+  "train_min": 1877.2,
+  "train_max": 2504.9,
+  "validation_mean": 2106.8,
+  "validation_std": 166.5,
+  "validation_min": 1881.9,
+  "validation_max": 2489.5,
+  "test_mean": 2099.9,
+  "test_std": 167.8,
+  "test_min": 1877.9,
+  "test_max": 2487.9
+}

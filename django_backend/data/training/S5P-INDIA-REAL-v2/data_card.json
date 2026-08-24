@@ -1,0 +1,28 @@
+{
+  "dataset_name": "S5P-INDIA-REAL-v2",
+  "source": "Google Earth Engine (GEE)",
+  "satellite": "Sentinel-5P TROPOMI",
+  "instrument": "TROPOspheric Monitoring Instrument (TROPOMI)",
+  "gee_dataset": "COPERNICUS/S5P/OFFL/L3_CH4",
+  "methane_band": "CH4_column_volume_mixing_ratio_dry_air",
+  "raw_gee_unit": "dry_air_mol_per_mol",
+  "converted_training_unit": "ppb (parts per billion)",
+  "spatial_extent": "India National Region [64.02E, 3.62N, 98.73E, 39.25N]",
+  "temporal_extent": "Jan 2026 - Jul 2026 (180 days)",
+  "total_GEE_images": 38246,
+  "valid_CH4_images": 12450,
+  "valid_wind_images": 11800,
+  "valid_temporal_sequences": 3200,
+  "final_real_samples": 600,
+  "qa_threshold": "qa_value >= 0.5 (clear sky / high confidence TROPOMI pixels)",
+  "temporal_sequence_definition": "t-2 observation < t-1 observation < target t+1 observation (24h horizon)",
+  "split": {
+    "train": 420,
+    "validation": 90,
+    "test": 90,
+    "methodology": "Chronological (zero temporal overlap)"
+  },
+  "fallback_policy": "Explicit label GEE OFFLINE \u2014 REFERENCE DATA MODE when GEE disconnected",
+  "reference_data_policy": "Reference facility nodes isolated strictly from ML model train/val/test splits",
+  "known_limitations": "Spatial pixel averaging over 7x5.5 km grid cell."
+}

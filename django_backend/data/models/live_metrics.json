@@ -1,0 +1,16 @@
+{
+  "total_predictions_logged": 1,
+  "pending_forecasts_count": 1,
+  "validated_forecasts_count": 0,
+  "live_rmse": null,
+  "live_mae": null,
+  "live_r2": null,
+  "uncertainty_calibration": {
+    "terminology": "epistemic uncertainty estimate (MC Dropout N=10)",
+    "coverage_1sigma": null,
+    "coverage_2sigma": null,
+    "status": "PENDING"
+  },
+  "validation_status": "LIVE VALIDATION PENDING (No Future Target Available Yet)",
+  "last_validated_timestamp": "2026-08-13T09:03:20.407661Z"
+}

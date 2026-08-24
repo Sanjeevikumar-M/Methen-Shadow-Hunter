@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_name": "t_minus_1_ch4",
+    "importance": 0.1829
+  },
+  {
+    "rank": 2,
+    "feature_name": "t_minus_2_ch4",
+    "importance": 0.1404
+  },
+  {
+    "rank": 3,
+    "feature_name": "anomaly_ppb",
+    "importance": 0.1251
+  },
+  {
+    "rank": 4,
+    "feature_name": "z_score",
+    "importance": 0.0892
+  },
+  {
+    "rank": 5,
+    "feature_name": "longitude",
+    "importance": 0.081
+  },
+  {
+    "rank": 6,
+    "feature_name": "gaussian_plume_concentration",
+    "importance": 0.0708
+  },
+  {
+    "rank": 7,
+    "feature_name": "u_wind",
+    "importance": 0.0653
+  },
+  {
+    "rank": 8,
+    "feature_name": "latitude",
+    "importance": 0.064
+  },
+  {
+    "rank": 9,
+    "feature_name": "v_wind",
+    "importance": 0.0579
+  },
+  {
+    "rank": 10,
+    "feature_name": "background_ch4",
+    "importance": 0.0429
+  },
+  {
+    "rank": 11,
+    "feature_name": "wind_speed",
+    "importance": 0.0429
+  },
+  {
+    "rank": 12,
+    "feature_name": "wind_direction",
+    "importance": 0.0375
+  }
+]

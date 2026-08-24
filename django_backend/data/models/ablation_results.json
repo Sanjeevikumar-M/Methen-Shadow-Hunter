@@ -1,0 +1,25 @@
+{
+  "physics_loss_ablation": {
+    "nn_without_physics_loss": {
+      "MAE": 107.54000091552734,
+      "RMSE": 146.0,
+      "R2": 0.24279999732971191,
+      "MAPE": 5.010000228881836
+    },
+    "description": "Standard NN (12 Features) vs MethanePINN (12 Features + Physics Loss)"
+  },
+  "gaussian_feature_ablation": {
+    "nn_without_gaussian_feature_9f": {
+      "MAE": 108.0,
+      "RMSE": 141.13999938964844,
+      "R2": 0.2924000024795532,
+      "MAPE": 5.010000228881836
+    },
+    "nn_with_gaussian_feature_12f": {
+      "MAE": 107.54000091552734,
+      "RMSE": 146.0,
+      "R2": 0.24279999732971191,
+      "MAPE": 5.010000228881836
+    }
+  }
+}

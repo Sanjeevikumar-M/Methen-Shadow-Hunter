@@ -1,0 +1,27 @@
+{
+  "matching_policy": {
+    "window_hours": 48.0,
+    "spatial_tolerance_deg": 0.5
+  },
+  "total_predictions_logged": 2,
+  "pending_forecast_count": 2,
+  "validated_forecast_count": 0,
+  "sample_count_status": "PENDING",
+  "live_rmse": null,
+  "live_mae": null,
+  "live_r2": null,
+  "live_mape": null,
+  "mean_signed_bias": null,
+  "median_absolute_error": null,
+  "residual_std": null,
+  "live_target_mean": null,
+  "live_target_std": null,
+  "uncertainty_calibration": {
+    "terminology": "epistemic uncertainty estimate (MC Dropout N=10)",
+    "uncertainty_1sigma_coverage": null,
+    "uncertainty_2sigma_coverage": null,
+    "status": "PENDING"
+  },
+  "status": "LIVE VALIDATION PENDING \u2014 No future target observations have been validated yet.",
+  "last_validated_timestamp": "2026-08-13T09:27:26.746796Z"
+}

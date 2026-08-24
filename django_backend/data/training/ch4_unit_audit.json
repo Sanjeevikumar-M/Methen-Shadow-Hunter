@@ -1,0 +1,9 @@
+{
+  "gee_dataset": "COPERNICUS/S5P/OFFL/L3_CH4",
+  "gee_band": "CH4_column_volume_mixing_ratio_dry_air",
+  "stored_unit": "ppb (parts per billion)",
+  "training_unit": "ppb (parts per billion)",
+  "prediction_unit": "ppb (parts per billion)",
+  "conversion_applied": "GEE mol/mol * 1e9 = ppb (verified)",
+  "unit_audit_status": "PASS"
+}
